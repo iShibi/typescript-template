@@ -1,0 +1,59 @@
+{
+	"name": "typescript-template",
+	"version": "1.0.0",
+	"description": "Template repository for a TypeScript project",
+	"author": {
+		"name": "Shubham Parihar",
+		"email": "shubhamparihar391@gmail.com",
+		"url": "https://github.com/iShibi"
+	},
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"build:dev": "tsc -w",
+		"test": "vitest",
+		"prepare": "husky install",
+		"lint:check": "eslint . --ext .js,.ts",
+		"lint:fix": "eslint . --ext .js,.ts --fix",
+		"format:check": "prettier --check .",
+		"format:fix": "prettier --write .",
+		"prepublishOnly": "npm run build"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.1",
+		"@commitlint/config-angular": "^17.0.0",
+		"@types/node": "^17.0.36",
+		"@typescript-eslint/eslint-plugin": "^5.26.0",
+		"@typescript-eslint/parser": "^5.26.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^12.4.2",
+		"prettier": "^2.6.2",
+		"typescript": "^4.7.2",
+		"vitest": "^0.12.9"
+	},
+	"files": [
+		"/dist"
+	],
+	"engines": {
+		"node": ">=16.0.0",
+		"npm": ">=7.0.0"
+	},
+	"homepage": "https://github.com/iShibi/typescript-template#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iShibi/typescript-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/iShibi/typescript-template/issues"
+	},
+	"keywords": [
+		"template",
+		"typescript",
+		"node",
+		"eslint",
+		"prettier"
+	]
+}
