@@ -3,19 +3,22 @@
 	"editor.tabSize": 2,
 	"editor.insertSpaces": false,
 	"files.insertFinalNewline": true,
-
-	// eslint
 	"eslint.alwaysShowStatus": true,
 	"eslint.validate": ["typescript"],
 	"editor.codeActionsOnSave": {
 		"source.fixAll": true,
-		"source.organizeImports": false
+		"source.organizeImports": true
 	},
-
-	// prettier
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-
-	// typescript
-	"typescript.tsdk": "node_modules\\typescript\\lib"
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+	"editor.quickSuggestions": {
+		"strings": true
+	},
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+	"editor.detectIndentation": false,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
